@@ -1,19 +1,17 @@
-let items = [67,99,5,2]
- 
-
+//Functions
 function enqueue (arr,number) {
-
-   arr.push(number)
+  arr.push(number)
 }
-
-enqueue(items,4)
-
-console.log(items)
 
 function dequeue (arr) {
-
   arr.shift()
 }
-dequeue(items)
 
-console.log(items)
+//Main code
+
+let items = [67,99,5,2]
+console.log("Initial array:", items)
+enqueue(items,4)
+console.log("Added item to array:", items)
+dequeue(items)
+console.log("Removed item from array:", items)
